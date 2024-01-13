@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerImg {
+    width: 800px;
+    height: 250px;
+    background-image: url(./banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-self: center;
+    display: flex;
+}
+
+.banner {
+    border: 1px solid transparent;
+    width: 80%;
+    height: 250px;
+    justify-content: center;
+    background-color: #0E8785;
+    display: flex;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    transform: translateY(-350px);
+    mask-position:0 20% ,0 0;
+    width: 100px; /* double the radius for the semi-circle */
+    height: 100px;
+    background: white; /* Assuming the background color is white */
+    border-radius: 50%;
+}

@@ -1,0 +1,33 @@
+.cosmonaut-rectangle {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    transform: translateY(0px);
+    border: 1px solid transparent;
+    background-color: blueviolet;
+    border-radius: 10px;
+    animation: slide-bottom 2s;
+    /* background: url('cosmonaut-image.jpg') center center/cover; */
+  }
+  
+  .cosmonaut-rectangle::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    transform: translateY(50px);
+    mask-position:0 20% ,0 0;
+    width: 100px; /* double the radius for the semi-circle */
+    height: 100px;
+    background: white; /* Assuming the background color is white */
+    border-radius: 50%;
+  }
+  
+  @keyframes slide-bottom {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
