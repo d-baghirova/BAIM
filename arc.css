@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    accent-color: #3d8584;
 }
 
 /* baner */
@@ -109,7 +108,6 @@ body {
 
 
 .banner {
-    position: fixed;
     background-color: #3d8584;
     width: calc(100vw - 20px);
     height: 259.75px;
@@ -131,11 +129,11 @@ body {
 .rect {
     content: "";
     position: absolute;
-    top: 221px;
-    left: calc(50vw - 95px);
+    top: 228px;
+    left: calc(50vw - 98px);
     z-index: 0.7;
     mask-position:0 20% ,0 0;
-    width: 190px; /* double the radius for the semi-circle */
+    width: 196px; /* double the radius for the semi-circle */
     height: 50px;
     background: white; /* Assuming the background color is white */
   }
@@ -144,8 +142,9 @@ body {
     position: absolute;
     background-color: #3d8584;
     z-index: 0.9;
-    top: 137.75px;
-    width: 120px;
+    /* top: 137.75px; */
+    top: 148.3px;
+    width: 60px;
     height: 120px;
 }
 
@@ -153,7 +152,7 @@ body {
     width: 100px;
     height: 100px;
     background-color: white;
-    top: 187px;
+    top: 195px;
 }
 
 .btn {
@@ -161,7 +160,7 @@ body {
     height: 86px;
     z-index: 1;
     background-color: #66d3d1;
-    top: 197px;
+    top: 207px;
     color: white;
     font-size: 2rem;
 
@@ -173,36 +172,46 @@ body {
 } */
 
 .left {
-    left: calc(50vw - 50px - 112px);
+    left: calc(50vw - 50.8px - 60.8px + 7.6px);
+    border-radius: 0 150px 150px 0;
 }
 
 
 .center {
-    left: calc(50vw - 50px);
+    left: calc(50vw - 50.8px);
 }
 
 .right {
-    left: calc(50vw + 50px - 9px);
+    left: calc(50vw + 50.8px - 6.8px);
+    border-radius: 150px 0 0 150px;
 }
 
 
 
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 500px) {
     body {
         padding: 0;
+        width: 100vw;
     }
     .banner {
-        width: 100%;
+        width: 100vw;
         border-radius: 0;
         top:0;
         left: 0;
     }
+  
+    .center{
+      top: 198px;
+    }
     .right, .left {
-        top: 138.76px;
+      top: 138px;
+    }
+    .right {
+      left: calc(50vw + 50.8px - 6.8px - 6px);
     }
     .left {
-        left: calc(50vw - 50px - 112px);
+      left: calc(50vw - 50.8px - 60.8px + 11.5px );
     }
 }
  
