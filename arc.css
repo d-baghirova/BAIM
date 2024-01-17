@@ -450,6 +450,7 @@ input {
     height: 100px;
   }
 
+
   
   p.larger.white {
     margin-left: 50px;
@@ -509,6 +510,10 @@ input {
       left: 0;
   }
 
+  .w {
+    margin-top: 150px;
+  }
+
   /* .center{
     top: 198px;
   }
@@ -548,7 +553,7 @@ input {
   .w {
     width: 900px;
     height: 700px;
-    margin-top: -50px;
+    margin-top: 150px;
     margin-left: 100px;
   }
   .box {
